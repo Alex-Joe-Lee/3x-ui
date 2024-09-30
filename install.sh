@@ -43,6 +43,8 @@ os_version=$(grep "^VERSION_ID" /etc/os-release | cut -d '=' -f2 | tr -d '"' | t
 
 if [[ "${release}" == "arch" ]]; then
     echo "Your OS is Arch Linux"
+elif [[ "${release}" == "ol" ]]; then
+    echo "Your OS is ol Linux"
 elif [[ "${release}" == "parch" ]]; then
     echo "Your OS is Parch Linux"
 elif [[ "${release}" == "manjaro" ]]; then
